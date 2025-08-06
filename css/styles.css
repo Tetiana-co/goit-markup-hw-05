@@ -259,7 +259,7 @@ a {
 /* Team Section */
 .page-team {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
+  padding: 120px 0;
   background-color: #f4f4fd;
   text-align: center;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
