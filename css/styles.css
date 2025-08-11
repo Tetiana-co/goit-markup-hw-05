@@ -708,10 +708,11 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 16px;
 }
 
 .input-group {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .input-label {
   display: block;
@@ -724,7 +725,6 @@ svg {
 
 .input-wrapper {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .input-modal,
