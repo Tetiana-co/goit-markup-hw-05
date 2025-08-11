@@ -674,12 +674,11 @@ svg {
 .modal-close-icon {
   width: 8px;
   height: 8px;
-  transition: stroke 250ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
   fill: currentColor;
-  transition: fill 250ms ease;
 }
 
 .modal-close:hover,
@@ -712,7 +711,7 @@ svg {
 }
 
 .input-group {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .input-label {
   display: block;
@@ -776,7 +775,6 @@ svg {
 
 /* CHECKBOX */
 .form-checkbox-label {
-  margin-top: 16px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -810,7 +808,7 @@ svg {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* коли чекбокс активний */
-.form-checkbox:checked + .custom-checkbox {
+.form-checkbox:checked + .form-checkbox-label .custom-checkbox {
   display: inline-flex;
   background-color: var(--btn-accent, #404bbf);
   border: none;
@@ -818,7 +816,7 @@ svg {
 }
 
 /* показуємо галочку при активному стані */
-.form-checkbox:checked + .custom-checkbox .check-icon {
+.form-checkbox:checked + .form-checkbox-label .check-icon {
   fill: var(--icon-accent, #f4f4fd);
   opacity: 1;
 }
@@ -877,5 +875,4 @@ svg {
 .check-icon {
   width: 10px;
   height: 8px;
-  fill: #f4f4fd;
 }
