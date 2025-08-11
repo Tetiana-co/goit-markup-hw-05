@@ -715,7 +715,7 @@ svg {
 }
 .input-label {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   font-size: 12px;
   color: #8e8f99;
   line-height: 1.17;
@@ -794,12 +794,12 @@ svg {
   pointer-events: none;
 }
 .custom-checkbox {
+  display: inline-flex;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   flex-shrink: 0;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
