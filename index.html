@@ -569,6 +569,25 @@
             ></textarea>
           </div>
 
+          <!-- Чекбокс -->
+          <div class="form-checkbox-wrapper">
+            <label class="form-checkbox-label">
+              <input
+                type="checkbox"
+                name="agreement"
+                class="form-checkbox visually-hidden"
+                required
+              />
+              <span class="custom-checkbox">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="modal-link">Privacy Policy</a>
+            </label>
+          </div>
+
           <!-- Submit -->
           <button type="submit" class="modal-submit">Send</button>
         </form>
@@ -576,55 +595,6 @@
     </div>
 
     <!-- Modal End -->
-
-    <!-- Privacy Policy Checkbox -->
-    <div class="form-checkbox-wrapper" style="margin-bottom: 24px">
-      <input
-        id="user-privacy"
-        type="checkbox"
-        name="user-privacy"
-        value="true"
-        class="form-checkbox visually-hidden"
-      />
-      <label
-        for="user-privacy"
-        class="form-checkbox-label"
-        style="
-          font-size: 12px;
-          line-height: 1.17;
-          letter-spacing: 0.04em;
-          color: var(--text-color-light, #8e8f99);
-        "
-      >
-        <span
-          class="custom-checkbox"
-          style="
-            width: 16px;
-            height: 16px;
-            border: 1px solid rgba(46, 47, 66, 0.4);
-            border-radius: 2px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            fill: transparent;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          "
-        >
-          <svg class="check-icon" width="10" height="8">
-            <use href="./images/icons.svg#icon-check"></use>
-          </svg>
-        </span>
-        I accept the terms and conditions of the
-        <a
-          href="#"
-          class="privacy-link"
-          style="color: var(--accent-color, #4d5ae5)"
-          >Privacy Policy</a
-        >
-      </label>
-    </div>
 
     <!-- Scripts -->
     <script src="./js/modal.js"></script>

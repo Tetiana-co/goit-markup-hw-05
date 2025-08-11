@@ -809,16 +809,22 @@ svg {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-checkbox:checked + .form-checkbox-label .custom-checkbox {
-  display: block;
+/* коли чекбокс активний */
+.form-checkbox:checked + .custom-checkbox {
+  display: inline-flex;
   background-color: var(--btn-accent, #404bbf);
   border: none;
   fill: var(--icon-accent, #f4f4fd);
 }
+
+/* показуємо галочку при активному стані */
+.form-checkbox:checked + .custom-checkbox .check-icon {
+  fill: var(--icon-accent, #f4f4fd);
+  opacity: 1;
+}
 /* LINK */
 .modal-link {
-  color: #4d5ae5;
+  color: var(--accent-color, #4d5ae5);
   text-decoration: underline;
 }
 /* SUBMIT BUTTON */
@@ -867,4 +873,9 @@ svg {
 
 .modal-checkbox:checked + .checkbox-icon .checkbox-check {
   opacity: 1;
+}
+.check-icon {
+  width: 10px;
+  height: 8px;
+  fill: #f4f4fd;
 }
