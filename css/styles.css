@@ -745,8 +745,11 @@ svg {
   color: rgba(46, 47, 66, 0.4);
   resize: none;
   padding: 8px 16px;
+}
+.textarea-group {
   margin-bottom: 16px;
 }
+
 .input-modal {
   line-height: 1.5;
   font-size: 14px;
